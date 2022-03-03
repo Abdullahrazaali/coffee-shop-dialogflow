@@ -20,7 +20,7 @@ function App() {
       return [{ sender: "user", text: text }, ...prev];
     });
 
-    axios.post(`http://localhost:3000/talktochatbot`, {
+    axios.post(`https://coffee-shop-dialogflow.herokuapp.com/talktochatbot`, { // yhn pr hum nai heroku ka link lagay hai 
       text: text
     })
       .then((response) => {
